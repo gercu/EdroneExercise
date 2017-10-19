@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <meta charset="UTF-8">
+        <title>Integracja E-drone</title>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="http://bog.ayz.pl/edrone/">Strona główna</a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a id="orderNavButton" class="nav-link invisible" href="#order-form">Zrealizuj zamówienie(0)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1 id="product-name">Tytuł</h1>
+            <div class="product-box">
+                <div class="product-photos">
+                    <div id="big-photo">
+                        <img id="big-photo-img" src="https://i.imgur.com/Ge6KENc.jpg" alt="photo">
+                    </div>
+                    <div class="photos-list owl-carousel owl-theme">
+                        <div class="item" data-id="1" data-title="Buty Sportowe" data-category-id="1" data-category-name="Buty">
+                            <img src="https://i.imgur.com/Ge6KENc.jpg" alt="but">
+                        </div>
+                        <div class="item" data-id="2" data-title="Rower Sportowy" data-category-id="2" data-category-name="Rowery">
+                            <img src="https://i.imgur.com/TaqCbnL.jpg" alt="rower">
+                        </div>
+                        <div class="item" data-id="3" data-title="Kajak Sportowy" data-category-id="3" data-category-name="Łodzie">
+                            <img src="https://i.imgur.com/aK6cj3R.jpg" alt="kajak">
+                        </div>
+                        <div class="item" data-id="4" data-title="Plecak Sportowy" data-category-id="4" data-category-name="Plecaki">
+                            <img src="https://i.imgur.com/svZbfSH.jpg" alt="plecak">
+                        </div>                        
+                    </div>
+                </div>
+                <div class="product-data">
+                    <div class="product-size">
+                        <span>Rozmiar</span>
+                    </div>
+                    <div>
+                        <p class="product-price-box"><span id="product-price">666</span> zł</p>
+                    </div>
+                    <div id="addToCart">Dodaj do koszyka</div>
+                    <div class="product-description">
+                        <ul>
+                            <li>superszybka wysyłka <b>0zł</b></li>
+                            <li>aż <b>365 dni</b> na zwrot</li>
+                            <li>darmowy zwrot i wymiana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Popup -->
+        <form id="order-form" class="white-popup-block mfp-hide form-horizontal">
+            <h1>Formularz zamówienia</h1>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="firstName">Imię:</label>
+                <div class="col-sm-10">
+                    <input id="firstName" class="form-control" name="firstName" placeholder="Imię" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastName">Nazwisko:</label>
+                <div class="col-sm-10">
+                    <input id="lastName" class="form-control" name="lastName" placeholder="Nazwisko" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input id="email" class="form-control" name="email" placeholder="twój@email.com" required="" type="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="phone">Telefon:</label>
+                <div class="col-sm-10">
+                    <input id="phone" class="form-control" name="phone" placeholder="" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="city">Miasto:</label>
+                <div class="col-sm-10">
+                    <input id="city" class="form-control" name="city" placeholder="Warszawa" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="country">Kraj:</label>
+                <div class="col-sm-10">
+                    <input id="country" class="form-control" name="country" placeholder="Polska" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Zamów</button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Success Popup -->
+        
+        <div id="successPopup" class="white-popup-block mfp-hide">
+            Sukces!
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://d3bo67muzbfgtl.cloudfront.net/edrone_2_0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    </body>
+</html>

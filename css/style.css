@@ -1,0 +1,149 @@
+body {
+    background-color: #F8F8F8;
+}
+
+.container {
+
+    margin-top: 80px;
+    width: 100%;
+}
+
+.product-box {
+    border: #d9d9d9 solid 1px;
+    height: 45rem;    
+}
+
+.product-photos {
+    background-color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+
+.product-data {
+    display: inline-block;
+    padding: 20px;
+    background-color: #3F3363;
+    height: 100%;
+    width: 40%;
+}
+
+.product-size {
+    color: #E5DEEC;
+    height:40%;
+}
+
+.product-description {
+    color: #E5DEEC;
+}
+
+.product-price-box {
+    color: #E5DEEC;
+}
+
+#product-price {
+    font-size: 300%;
+}
+
+#addToCart {
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #3F3363;
+}
+
+.product-data {
+}
+
+#big-photo {
+    height: 65%;
+    padding: 1rem;
+}
+
+#big-photo img {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.photos-list {
+    height: 30%;
+    padding: 0.9rem;
+}
+
+.owl-carousel .item {
+    height: 10rem;
+    width: 100%;
+    border: #d9d9d9 solid 1px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.owl-carousel .owl-item img {
+    height: 100%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.selected {
+    border-width: 2px !important;
+    border-color: blue !important;
+}
+
+#orderNavButton.disabled {
+    cursor: not-allowed;
+}
+
+#orderNavButton {
+    cursor: pointer;
+}
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 850px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
